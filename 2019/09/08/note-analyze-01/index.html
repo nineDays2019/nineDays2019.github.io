@@ -5,15 +5,20 @@
   
 
   
-  <title>李一条的回忆录</title>
+  <title>笔记：数据分析 01 | 李一条的回忆录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="李一条的回忆录">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="在数据挖掘中，有几个非常重要的任务，就是分类、聚类、预测和关联分析。  分类  就是通过训练集得到一个分类模型，然后用这个模型可以对其他数据进行分类。  聚类  聚类就是将数据自动聚类成几个类别，聚到一起的相似度大，不在一起的差异性大。往往利用聚类来做数据划分。  预测 通过当前和历史数据来预测未来趋势，它可以更好地帮助我们识别机遇和风险。  关联分析  就是发现数据中的关联规则。">
+<meta name="keywords" content="Note,数据分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记：数据分析 01">
+<meta property="og:url" content="http://yoursite.com/2019/09/08/note-analyze-01/index.html">
 <meta property="og:site_name" content="李一条的回忆录">
+<meta property="og:description" content="在数据挖掘中，有几个非常重要的任务，就是分类、聚类、预测和关联分析。  分类  就是通过训练集得到一个分类模型，然后用这个模型可以对其他数据进行分类。  聚类  聚类就是将数据自动聚类成几个类别，聚到一起的相似度大，不在一起的差异性大。往往利用聚类来做数据划分。  预测 通过当前和历史数据来预测未来趋势，它可以更好地帮助我们识别机遇和风险。  关联分析  就是发现数据中的关联规则。">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-08T14:41:38.286Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李一条的回忆录">
+<meta name="twitter:title" content="笔记：数据分析 01">
+<meta name="twitter:description" content="在数据挖掘中，有几个非常重要的任务，就是分类、聚类、预测和关联分析。  分类  就是通过训练集得到一个分类模型，然后用这个模型可以对其他数据进行分类。  聚类  聚类就是将数据自动聚类成几个类别，聚到一起的相似度大，不在一起的差异性大。往往利用聚类来做数据划分。  预测 通过当前和历史数据来预测未来趋势，它可以更好地帮助我们识别机遇和风险。  关联分析  就是发现数据中的关联规则。">
   
     <link rel="alternate" href="/atom.xml" title="李一条的回忆录" type="application/atom+xml">
   
@@ -64,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-note-analyze-01" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-note-analyze-01" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/08/note-analyze-01/" class="article-date">
   <time datetime="2019-09-08T14:38:59.000Z" itemprop="datePublished">2019-09-08</time>
@@ -79,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/08/note-analyze-01/">笔记：数据分析 01</a>
+    <h1 class="article-title" itemprop="name">
+      笔记：数据分析 01
     </h1>
   
 
@@ -115,69 +118,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-note-cmake-01" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/08/note-cmake-01/" class="article-date">
-  <time datetime="2019-09-08T14:35:29.000Z" itemprop="datePublished">2019-09-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/08/note-cmake-01/">笔记：Cmake 01</a>
-    </h1>
+    <a href="/2019/09/08/note-cmake-01/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">笔记：Cmake 01</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>From 《CMake Practice》</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
-<li><code>PROJECT_BINARY_DIR</code>    编译发生的当前目录</li>
-<li><code>EXECUTABLE_OUTPUT_PATH</code>    二进制的输出路径</li>
-<li><code>LIBRARY_OUTPUT_PATH</code>    库的输出路径</li>
-<li><code>CMAKE_INSTALL_PREFIX</code>    类似于 configure 脚本的 -prefix，常见的使用方法是这样的：<code>cmake -CMAKE_INSTALL_PREFIX=/usr .</code></li>
-</ul>
-<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><ul>
-<li><code>INSTALL</code>    用于定义安装规则，安装的内容包括目标二进制、动态库、静态库以及文件、目录、脚本等等</li>
-<li><code>INCLUDE_DIRECTORIES</code>        用来向工程添加多个特定的头文件搜索路径，路径之间用空格分割，如果路径中包含了空格，可以使用双引号将它括起来，默认的行为是追加到当前的头文件搜索路径的后面</li>
-<li><code>TARGET_LINK_LIBRARIES</code>    可以用来为 target 添加需要链接的共享库</li>
-<li>特殊的环境变量 <code>CMAKE_INCLUDE_PATH</code> 和 <code>CMAKE_LIBRARY_PATH</code>     这两个是<strong>环境变量</strong>而不是 cmake 变量，使用方法是要在 bash 中用 export 进行设置</li>
-</ul>
-<h2 id="Notice"><a href="#Notice" class="headerlink" title="Notice"></a>Notice</h2><ul>
-<li>在哪里 <code>ADD_EXECUTABLE</code> 或 <code>ADD_LIBRARY</code>，如果需要改变目标存放路径，就在哪里加入 <code>EXECUTABLE_OUTPUT_PATH</code> 或 <code>LIBRARY_OUTPUT_PATH</code> 的定义。</li>
-<li><code>CMAKE_INSTALL_PREFIX</code> 默认值是 <strong>/usr/local</strong></li>
-<li>静态库要使用 <code>ARCHIVE</code> 关键字</li>
-<li><code>make VERBOSE=1</code> 可以查看错误细节</li>
-<li><code>otool -L</code> [mac]    <code>ldd</code>    [linux]</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/08/note-cmake-01/" data-id="ck0b33nhu0000y8osxzpakitx" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cmake/">Cmake</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Note/">Note</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
